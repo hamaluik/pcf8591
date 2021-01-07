@@ -1,5 +1,5 @@
 use linux_embedded_hal::I2cdev;
-use pcf8591::*;
+use pcf8591_hal::*;
 
 pub fn main() {
     let i2c = I2cdev::new("/dev/i2c-1").expect("can open i2c device");
